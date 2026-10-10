@@ -134,14 +134,7 @@ jupyter notebook ai-sous-chef-generative-ai.ipynb
 
    (No quotes, no spaces around `=`.)
 
-2. `.env` is already in `.gitignore`, so it will not be committed. Check this before your first push:
-
-   ```bash
-   git status            # .env should NOT appear
-   git check-ignore .env # should print ".env"
-   ```
-
-3. In code, `load_dotenv()` reads it and `os.environ["GOOGLE_API_KEY"]` returns the key.
+2. In code, `load_dotenv()` reads it and `os.environ["GOOGLE_API_KEY"]` returns the key.
 
 **Alternative: a shell environment variable** (available to every project, no file in the repo):
 
