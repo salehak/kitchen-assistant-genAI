@@ -1,3 +1,34 @@
+# ============================================================
+# Project-specific
+# ============================================================
+
+# Datasets — too large for GitHub (full_dataset.csv is ~2.2 GB).
+# See README "Get the dataset" for download instructions.
+*.csv
+*.zip
+data/
+
+# Secrets / API keys — never commit these
+.env
+.env.*
+!.env.example
+secrets.json
+
+# Local ChromaDB persistence (if enabled later)
+chroma/
+chroma_db/
+.chroma/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ============================================================
+# Standard Python template
+# ============================================================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
